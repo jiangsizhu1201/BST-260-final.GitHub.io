@@ -3,9 +3,9 @@ title: "Final"
 author: "Jiang"
 date: "2022-12-12"
 output:
-  pdf_document: default
   html_document:
     df_print: paged
+  pdf_document: default
   always_allow_html: true
 ---
 
