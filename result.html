@@ -11,7 +11,7 @@
 
 
 
-<title>Methods</title>
+<title>Result</title>
 
 <script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -270,19 +270,88 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Methods</h1>
+<h1 class="title toc-ignore">Result</h1>
 
 </div>
 
 
-<p><strong>Methods:</strong> Machine Learning, Linear Regression, Cross
-Validation, Random Forest Model, K-Nearest Neighbors Model</p>
-<p>All analysis were completed on R-4.2.1, and all packages used were
-listed below: tidytuesdayR, ggplot2, tidyverse, dplyr, purr,
-tibble,readr, stringr, tidyselect, tidyr, magrittr, DT, kableExtra,
-kknn, randomForest, glmnet, corrplot, car, caret, tidytext,
-janitor,viridis, tinytex.</p>
-<p><img src="ML.jpg" /></p>
+<ul>
+<li><em>Linear regression model, Ridge regression model with cross
+validation</em></li>
+</ul>
+<p>We first investigate the linear relationship between rating and cocoa
+content with simple linear regression. The correlation coefficient
+between the rating and the cocoa content is -0.149. As linear regression
+model shown below, each additional 1% of cocoa decreases the rating by
+approximately 0.012 (p-value &lt; 0.001). The adjusted R-squared is
+0.02.</p>
+<p><br /></p>
+<p><img src="cor1.png" /></p>
+<p><br /></p>
+<ul>
+<li><em>Multivariable Regression, Ridge Penalization</em></li>
+</ul>
+<p>Further, we take all listed ingredients into consideration while
+building the multivariate regression model:</p>
+<p><br /></p>
+<p><img src="tab1.png" /></p>
+<p><br /></p>
+<p>From correlation plot, we recognized that the stronger correlation
+between sugar and sweetener, as well as the one between sugar and
+beans.</p>
+<p><br /></p>
+<p><img src="cor2.png" /></p>
+<p><br /></p>
+<p>In response to the presence of multicollinearity, the Ridge is
+utilized as the penalization method. The results give a whole path of
+possible coefficients, and the best-fit model can be selected with cross
+validation. The Ridge regression model is built with cross validated
+MSE. Based on calculations, the R-squared increased after Ridge
+method.</p>
+<p><br /></p>
+<center>
+Ridge Regression with Cross Validation
+</center>
+<p><img src="ridge.png" /> <br /></p>
+<ul>
+<li><em>Random forest model with cross validation</em></li>
+</ul>
+<p>Due to the long computation time, the five-fold cross validation is
+used; in addition, the number of trees was reduced. Finally, to train on
+a smaller dataset, we took a random sample of the observations when
+constructing each tree. To check that we ran enough trees, we visualized
+the error rate over number of trees.</p>
+<p><br /></p>
+<p><img src="rf.png" /></p>
+<p><br /></p>
+<p>Given the disadvantage of poor interpretability, we examined variable
+importance, in order to count how often a predictor is used in the
+individual trees. From the plot, the cocoa percent is considered as the
+most crucial factor in the model, following by vanilla and lecithin.</p>
+<p><br /></p>
+<p><img src="var1.png" /></p>
+<ul>
+<li><em>K-nearest neighbors model with cross validation</em></li>
+</ul>
+<p>To begin the KNN modeling, we needed to compute a distance between
+each observation in the test set and each observation in the training
+set. We utilized 10-fold cross validation and the tuneGrid parameter.
+Here, the grid of values are 21 values selected between 10 and 50.
+According to the result, the final value used for the model was k = 18,
+given that RMSE was used to select the optimal model using the smallest
+value.</p>
+<p><br /></p>
+<p><img src="knn.png" /></p>
+<p><br /></p>
+<ul>
+<li><em>Model Evaluation</em></li>
+</ul>
+<p>All models were trained on the train_set, and were tested on test_set
+for performance evaluation. The RMSE was used as the primary measure for
+evaluating predictive power. Based on the final RMSE result, the Random
+Forest model has the smallest RMSE, which indicates that it was able to
+accurately predicts the response.</p>
+<p><img src="tab2.png" /></p>
 
 
 

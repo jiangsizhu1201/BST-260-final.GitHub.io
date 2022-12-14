@@ -1,5 +1,14 @@
 ---
-title: "About Me"
+title: "Methods"
 ---
 
-good 
+
+__Major analysis__ Machine Learning, Linear Regression, Cross Validation, Random Forest Model, K-Nearest Neighbors Model
+
+
+
+All analysis were completed on R-4.2.1, and all packages used were listed below: tidytuesdayR, ggplot2, tidyverse, dplyr, purr, tibble,readr, stringr, tidyselect, tidyr, magrittr, DT, kableExtra, kknn, randomForest, glmnet, corrplot, car, caret, tidytext, janitor,viridis, tinytex.
+
+<br />
+
+![](ML.jpg)

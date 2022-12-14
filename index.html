@@ -11,12 +11,12 @@
 
 
 
-<title>My Website</title>
+<title>Project Overview</title>
 
 <script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -58,6 +58,7 @@ if (window.hljs) {
 
 
 
+<link rel="stylesheet" href="style.css" type="text/css" />
 
 
 
@@ -238,15 +239,24 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Nicks Website</a>
+      <a class="navbar-brand" href="index.html">BST 260 Final Project</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="index.html">Home</a>
+  <a href="index.html">Project Overview</a>
 </li>
 <li>
-  <a href="about.html">About Me</a>
+  <a href="about.html">Methods</a>
+</li>
+<li>
+  <a href="result.html">Results</a>
+</li>
+<li>
+  <a href="Conclusion.html">Conclusion</a>
+</li>
+<li>
+  <a href="Ref.html">Reference</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -260,12 +270,38 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">My Website</h1>
+<h1 class="title toc-ignore">Project Overview</h1>
 
 </div>
 
 
-<p>Hello, World</p>
+<p><span style="color:brown"><strong>Chocolate</strong></span> is a food
+product manufactured from cocoa beans, which is consumed as candy and
+used for beverage or coat various confections and bakery products. It is
+rich in carbs and provides rapid energy; also, it is known to contain
+small amount of the stimulating alkaloids theobromine and caffeine.</p>
+<p><img src="choc2.jpg" /></p>
+<p><br /></p>
+<p><strong>Data Source:</strong> “Flavors of Cacao,” which can be
+retrieved from tidytuesdayR (Hughes 2022) chocolate rating data
+(18-01-2022).The ratings (as the Flavors of Cacao claimed) do not
+reflect health benefits, social missions, or organic status.</p>
+<p>The raw dataset includes 2530 observations and 10 variables, namely
+ref, company_manufacturer, company_location, review_date,
+country_of_bean_origin, cocoa_percent, ingredients,
+specific_bean_origin_or_bar_name, most_memorable_characteristics, and
+rating.</p>
+<p><strong>Here are some glimpses from the dataset:</strong></p>
+<p><br /></p>
+<center>
+<strong>World map of average chocolate rating</strong>
+</center>
+<p><img src="map.png" /></p>
+<p><br /></p>
+<center>
+<strong>What’s you favorite?</strong>
+</center>
+<p><img src="rating.png" /></p>
 
 
 

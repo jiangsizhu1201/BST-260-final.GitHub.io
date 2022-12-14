@@ -1,9 +1,20 @@
-name: "nicks-website"
+name: "BST 260 Final Project"
 output_dir: "."
 navbar:
-  title: "Nicks Website"
+  title: "BST 260 Final Project"
   left:
-    - text: "Home"
+    - text: "Project Overview"
       href: index.html
-    - text: "About Me"
+    - text: "Methods"
       href: about.html
+    - text: "Results"
+      href: result.html
+    - text: "Conclusion"
+      href: Conclusion.html
+    - text: "Reference"
+      href: Ref.html
+      
+output:
+  html_document:
+    theme: flatly
+    css: style.css

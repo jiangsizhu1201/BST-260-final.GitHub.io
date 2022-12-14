@@ -1,0 +1,21 @@
+---
+title: "Methods"
+---
+
+ __Reference:__
+ 
+[1]Data Source: tidytuesday/tree/master/data/2022/2022-01-18
+
+[2] Chocolate | Definition, History, Types, Production, & Facts | Britannica. (n.d.). Retrieved
+December 13, 2022, from https://www.britannica.com/topic/chocolate
+
+[3] Flavors of Cacao—Chocolate Database. (n.d.). Retrieved December 14, 2022, from http://flavorsofcacao.com/chocolate_database.html
+
+[4] Text predictors for #TidyTuesday chocolate ratings. (n.d.). Julia Silge. Retrieved December 14, 2022, from https://juliasilge.com/blog/chocolate-ratings/
+
+[5] Ingredients, from https://github.com/jmcastagnetto/tidytuesday-kludges/blob/main/2022-01-18_chocolate/01-get-data.R
+
+[6] Organics, G. (n.d.). Article Post—Global Organics. Global Organics News & Views. Retrieved December 13, 2022, from https://www.global-organics.comhttps://www.global-organics.com/post.php?s=2016-02-08-3-common-chocolate-questions-answered
+
+[7] Irizarry, R. A. (n.d.). Introduction to Data Science. Retrieved December 14, 2022, from http://rafalab.dfci.harvard.edu/dsbook/
+
